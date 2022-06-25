@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 3</title>
+</head>
+<body>
+    <script>
+
+
+ // • Zero is even.
+// • One is odd.
+// • For any other number N, its evenness is the same as N - 2.
+
+// Define a recursive function isEven corresponding to this description. 
+// The function should accept a single parameter (a positive, whole number) 
+// and return
+// a Boolean.
+// Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a
+// way to fix this?
+
+
+                // find the abs value first b4 anything (math.abs())
+        // function isEven(para){
+        //     if (para == 0) 
+        //         return true
+        //     else if (para == 1) 
+        //         return false
+        //     else
+        //         return isEven(Math.abs(para -2))
+
+        // }
+        //         console.log(isEven(-1));
+
+
+
+
+        //        let number = N => {
+        //                 N = Math.abs( N )
+        //              if (N == 0)
+        //                 return true
+        //             else if ( N == 1)
+        //                 return false
+        //             else 
+        //                 return number(N - 2)
+        //         }
+        //         console.log(number(50));
+
+            let arr = [1, 2, 3, 4, 5];
+
+            arr.length = 2; // truncate to 2 elements
+            alert( arr );
+
+
+
+
+
+
+               // function name(x , y) {
+                //     return (x < y ? x : y)
+                // }
+                // console.log(name(3, 5));
+
+
+
+                        // function min (x, y){
+                        //     if (x < y) 
+                        //         return x
+                        //     else if (y < x)
+                        //         return y
+                        //     else 
+                        //        return min(x, y == x, y)
+
+                        // }
+                        
+                        //     console.log(min(5,5));
+
+
+            //     let  x = 1 // global scope
+            //     const parentFunc = () => {
+            //         let myValue = 5
+            //         console.log(x);
+            //         console.log(myValue);
+                
+            //     const childFunc = () =>{
+            //         console.log(x += 3);
+            //         console.log(myValue += 5);
+            //     } 
+            //         return childFunc
+
+            //     }
+            //    let ans = parentFunc()
+            //    console.log(ans);
+            //    ans()
+
+
+
+
+
+            //   function name(str) {
+            //       let manage = /[\W_1]/g;
+            //     let smallStr =  str.toLowerCase().replace(manage, '')
+            //       let addOnStr = str.split('').reverse().join('')
+            //         if (str === 'timer') {
+            //             return true
+            //         }else return 'wrong data'
+            //   }
+            //   console.log(name('timer'));
+
+
+
+                // function count(numb) {
+                //     console.log(numb);
+                //     let numb2 = numb -1
+                //     if (numb2 > 0) {
+                //         count(numb2)
+                        
+                //     }
+                // }
+                // count(6)
+
+
+                // function name(params) {
+                //     name()
+                // }
+
+                //         name(3)
+
+
+
+
+
+            // function multiplier(factor) {
+            //     
+            //      return number => number * factor;
+            // }
+            // let twice = multiplier(2);
+            // console.log(twice(5));
+
+
+                // let multiFunc = (multiFunc) =>{
+                //     return secondNum => 
+                //         multiFunc * secondNum
+                    
+                // }
+                // let all = multiFunc(3)
+                // console.log(all(5));
+               
+                    //  function name(ms) {
+                    
+                    //     return sole => (par) => {
+                           
+                    //     }
+                    //     return fer => ms * par /fer
+                          
+                        
+                    // }
+                    //     let sol = sole(4)
+                    //     let ad =  name(6)
+                    //     console.log(ad(5));
+
+
+            // function isEven(pos) {
+            //      if (pos % 2 === 0) {
+            //         console.log(true);
+            //     }else
+            //     console.log(false);
+            // }
+            //    isEven(-1)
+
+    //    function name( rams) {
+    //        if (rams === undefined) {
+    //            rams = 'no datas provided'
+    //        }
+    //        return  rams   
+    //    }
+    //         console.log(name());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // const power = function(base, exponent) {
+                //     let result =1;
+                //     for (let count = 0; count < exponent; count++) {
+                //        result *= base;
+                //     }
+                //          return result;
+                //     };
+                //          console.log(power(2, 5))
+
+
+                //              function factorize(num) {
+                //                 let result = 1;
+                //                 for (let i = 1; i <= num; i++) {
+                //                     result *= i;
+                                    
+                //                 }
+                //                 return result
+                //             }
+                //             console.log(factorize(4));
+
+                // function greet(who) {
+                //     console.log("Hello " + who);
+                // }
+                //      greet("Harry");
+                //     console.log("Bye");
+
+                            // function power(base, exponent = 3) {
+                            //         let result = 1;
+                            //     for (let count = 0; count < exponent; count++) {
+                            //         result *= base;
+                            //     }
+                            //         return result;
+                            // }
+                            //         console.log(power(4));
+                                 
+                            //         console.log(power(2, 3));
+
+
+                            // function power(base, exponent) {
+                            //     if (exponent == 0 || base == 0) {
+                            //     return 1;
+                            //     } else {
+                            //     return base * power(base, exponent - 1);
+                            //     }
+                            //     }
+                            //     console.log(power(2, 3));
+
+
+                    // function findSolution(target) {
+                    //     function find(current, history) {
+                    //         if (current == target) {
+                    //             return history;
+                    //         } else if (current > target) {
+                    //              return null;
+                    //         } else {
+                    //             return find(current + 5, `(${history} + 5)`) ||
+                    //         find(current * 3, `(${history} * 3)`);
+                    //         }
+                    //     }
+                    //     return find(1, "1");
+                    // }
+                    // console.log(findSolution(24));
+
+
+                    // function printFarmInventory(cows, chickens) {
+                    //     let cowString = String(cows);
+                    //     while (cowString.length < 4) {
+                    //     cowString = "0" + cowString;
+                    // }
+                    //      console.log(`${cowString} Cows`);
+                    //     let chickenString = String(chickens);
+                    //     while (chickenString.length < 3) {
+                    //     chickenString = "0" + chickenString;
+                    // }
+                    //     console.log(`${chickenString} Chickens`);
+                    // }
+                    // printFarmInventory(82, 11);
+
+
+                    
+                // function printFarmInventory(cows, chickens) {
+                //     let cowString = String(cows);
+                //     for (; cowString.length < 3;  cowString = "0" + cowString) {
+                       
+                //      console.log(`${cowString} Cows`);
+                        
+                //     }
+                    
+                //     let chickenString = String(chickens);
+                //     for (; chickenString.length < 3;  chickenString = "0" + chickenString) {
+                       
+                //      console.log(`${chickenString} chickens`);
+                        
+                //     }
+                    
+                   
+                // }
+                // printFarmInventory(7, 11);
+
+
+
+        //     function name(x ,y) {
+        //         // x = 34;
+        //         // y = 45;
+
+        //     }
+        // Math.min(x ,y)
+        // console.log(name(23,34))
+
+                    // for (let i = 0; i < 100; i++) {
+                    //     if (i % 2 == 0) {
+                    //         console.log('even');
+                    //     }else
+                    //     console.log('odd');
+                    // }
+
+
+        // let count = numbers =>{
+        //         if (numbers == 0) {
+        //             return
+        //         }
+        //         console.log(numbers);
+        //         return count(numbers -1)
+        // }
+        // console.log(count(5));
+
+
+
+
+
+
+
+
+        // solution using modulos
+
+            //  function isEven(pos){
+            //         if (pos % 2 == 0) {
+            //             console.log('even number')
+            //         }else
+            //         console.log('odd number')
+            //  }
+            //         isEven(-1)
+
+
+// SOLUTION WITH RECURSION
+
+
+            //     function isEven(N) {
+            //         if ( N === 0) {
+            //             true
+            //         }else if (N === 1) {
+            //             return false
+                        
+            //         }else 
+            //             return N === -2
+            //     }
+            //     console.log(isEven(-1));
+
+
+            //     function isEven(N) {
+            //         if (N === 0) {
+            //             return true
+                       
+            //         }else if (N === 1) {
+                       
+            //             return false
+            //         }else{ 
+            //           return  N === -2                       
+                         
+                    
+            //         }
+            //     }
+            // console.log(isEven(75))
+
+
+
+                
+
+
+                // function square(x) { return x * x; }
+                //     console.log(square(4, true, "hedgehog"));
+
+                
+
+                // let str = 'freeCodeCamp'  
+                //    let str1 = str.split('')
+                 
+                //    let str3 =str1.join('')
+                // // let str2 =   str3.reverse('')
+                
+
+                // console.log(str3);
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

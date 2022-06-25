@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice on if else and switch js</title>
+</head>
+<body>
+<!-- <input id="inPut" type="text" value="Merc">
+<button id="btn" onclick=" checkCar() ">GET CAR</button>
+<p id="car"></p> -->
+
+<br>
+<br>
+<button onclick=" myFunction() ">click me</button>
+<div id="container">
+	<div id="amination"></div>
+</div>
+
+<style>
+	#container{
+		width: 300px;
+		height: 300px;
+		background-color: aqua;
+		position: relative;
+	}
+	#amination{
+		width: 60px;
+		height: 60px;
+		background-color: red;
+		position: absolute;
+	}
+	
+</style>
+</body>
+
+<script>
+				// 1
+
+
+function myFunction() {
+	var smallBox = document.getElementById('amination');
+	var pos = 0;
+	var interv = setInterval(frame, 20);
+	function frame() {
+		if (pos == 140) {
+			clearInterval(interv);
+		};
+	++pos;
+		smallBox.style.top = pos + "px";
+		smallBox.style.right = pos + "px";
+		// smallBox.style.bottom = pos + "px";
+		// smallBox.style.top = pos + "px";
+
+	}
+};
+
+// var myArray = [['john', 23], ['sunny', 45]];
+//  var removemyArray = myArray.pop();
+// delete myArray.shift();		 //ANOTHER WAY TO REMOVE THE FIRST ARRAY
+// delete myArray.pop();		 //ANOTHER WAY TO REMOVE THE LAST  ARRAY
+//  document.write(myArray);
+
+
+
+// function checkCar() {
+// 	var text;
+// 	var favCar = document.getElementById("inPut").value;
+// 	// document.write(favCar);
+// 	console.log(favCar);
+
+// 	switch (favCar) {
+// 		case 'Merc':
+// 			text = 'A nice German car';
+// 			break;
+// 		case 'Volvo':
+// 			text = 'Big and rugged  German car';
+// 			break;
+// 		case 'Ford':
+// 			text = 'American nice ride';
+// 			break;
+		
+// 		case 'Toyota':
+// 			text = 'Japanise finest ride';
+// 			break;
+// 		case 'BMW':
+// 			text = 'German machine';
+// 			break;
+// 		case 'Subaru':
+// 			text = 'American ride';
+// 			break;
+	
+// 		default:
+// 		text = 'Also a good car but, source not known';
+// 			break;
+// 	}
+// 	document.getElementById('car').innerHTML = text;
+// };
+
+
+
+
+
+
+let car =['merc', 'toyota', 'honda', 'subaru', 'ford'];
+let oko = '';
+	for (let len = 0; len < car.length; len++) {
+	document.write(car[len]);
+		delete car.shift();
+	document.write( '<br>');
+	// document.write(car);
+	
+	
+};
+
+// for (i = 0, b = car.length; i < b; i++){
+// 	document.write(car [i]);
+// document.write( '<br>');
+// // document.write( '<br>');
+
+// };
+
+// for (let i = 0; i < car.length; i++) {
+// 	// const element = car[i];
+// 	console.log(car[i])
+	
+// };
+
+// for (i=0, len = car.length; i < len; i++){
+// 	document.write(car [i]);
+// 	document.write( '<br>');
+// };
+
+
+// let cars = ['honda', 'volvo', 'merc', 'mazda', 'nissan'];
+// let myCars = '';
+// for (i = 0; i < cars.length; i++) {
+// 	 myCars += cars[i];
+	
+// }
+// delete cars.pop();
+// cars.push('subaru', 'jeep', 'toyota')
+// document.write( cars );
+
+
+
+	// USING FOR LOOP TO ADD UP NUMBERS
+	// USING FOR LOOP TO ADD UP NUMBERS
+
+var amount = [ 1, 2, 3, 4, 5, 6, 7];
+var total = 0;
+for (i = 0; i < amount.length; i++) {
+	 total += amount[i];
+	
+}
+document.write( '<br>');
+document.write(total);
+console.log(total);
+
+
+
+
+ 
+// let color = "red";
+// let date = '23th may 2020';
+// let colorDate = color + date;
+
+
+// date = 0;
+// do {
+// 	console.log(date++)
+	
+// } while (date <= 13);
+
+
+// colorDate = 0;
+// do {
+// 	document.write(colorDate++ )
+// } while (colorDate < 12);
+
+
+
+// let i = 0;
+// for (; i <= 3;) {
+//   document.write( i++ );
+// }
+
+
+
+//  while (date <= '23th may 2020') {
+// 	 console.log(date.length);
+// 	 date++
+//  }
+
+
+//  nwn  = color = 'red'? 'goood' : color == 'brown' ? 'not good' : 'try other color'
+//  console.log(nwn);
+
+
+
+
+// if (color != 'red') {
+// 	console.log('good to go');
+// }else if (date === '23th may 2020') {
+// 	console.log('not so')
+// }else if (colorDate == "color + date") {
+// 	conslole.log('failed')
+// };
+
+
+// switch(color && date){
+// 	case `${'red'} ${'23th may 2020'}`:
+// 		output = ('acess granted');
+// 		break;
+// 		default:
+// 			output = ('denied');
+// 			break;
+// };
+// console.log(output);
+
+
+
+
+
+// 2
+
+// let time = 14
+// var time = '2pm'
+ // var logi;
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// document.write (greeting)
+// document.write ('<br>')
+// document.write ('<br>')
+
+// SWITCH 
+
+// switch (time){
+// 	case '32am':
+// 	logi = ('good morning')
+// 	break;
+// 	case '22pm':
+// 	logi =('good afternoon')
+// 	break;
+// 	case "4pm":
+// 	logi=('good afternoon')
+// 	break;
+// 	default:
+// 	logi=("good night")
+// }
+//  document.write (logi )
+
+// 3
+
+// let newDate = "12th december";
+// let event = newDate;
+// let chrismas = event;
+
+// if (chrismas < event) {
+// 	shout 	= "alleluya";
+// 	}else if (event === newDate) {
+// 		shout = "the lord is Good";
+// }else{
+// 	shout = "boooo";
+// }
+// 	document.write (shout)
+// 	document.write ('<br>')
+// 	document.write ('<br>')
+
+// switch (newDate){
+// 	case '12th december ':
+//   console.log ('alleluya')
+//   break;
+//   case 'june 12th':
+//   console.log('the lord is good')
+//   break;
+//   default:
+//   console.log('boooo')
+//   break;
+// }
+
+
+// 4
+
+// const  chrismas ='25th december';
+// const easter = '27th april';
+// const boxingDay = '26th december'
+// const independence = '1st october'
+
+// if (chrismas != '25th december') {
+
+// 	results ='chrismas time';
+// }else if (easter > '27th april') {
+// 	results = 'easter time';
+// }else if (boxingDay > '26th december') {
+// 	results = 'boxingDay time';
+// }else if (independence != '1st october') {
+// 	results = 'independence time';
+// }else{
+// 	results = "no holiday";
+// }
+// document.write (results)
+// document.write ('<br>')
+// document.write ('<br>')
+
+
+// 5
+
+// let houses ='light';
+// let shops = ' trash bin';
+// let streets = 'good roads';
+// let schools = 'teachers ';
+// let parent = 'well paid jobs';
+
+// if (houses != 'light'){
+// 	ourNeeds = 'our houses needs light';
+// }else if (shops > 'trash bin'){
+// 	ourNeeds = 'ourshops needs trash bin';
+// }else if (schools > 'teachers'){
+// 	ourNeeds = 'we want good teachers for our schools'
+// } else if (streets < 'good roads') {
+// 	ourNeeds = 'our streets needs good roads'
+// }else if (parent === 'well paid jobs') {
+// 	ourNeeds = 'well paid jobs is all we need'
+// }else{
+// 	ourNeeds = " The government is corrupt"
+// }
+// document.write (ourNeeds)
+// 	document.write ('<br>')
+// 	document.write ('<br>')
+
+
+
+// 6
+
+// var accommodation = 23456765;
+// var schoolFees = 5433353;
+// var transportaion = 7654;
+// var totalSum = accommodation + schoolFees + transportaion;
+// var all = totalSum;
+
+
+// var total = accommodation != 23456765 ? 'transfer all' : all == totalSum ? 'kip them': schoolFees = 5433353 ? "too expensive" : (transportaion === 7654) ? 'cant afford it' :"pay the bill"
+// 	document.write (total);
+
+// document.write ('<br>')
+// 	document.write ('<br>')
+
+
+
+// 7
+
+// var timeTable = 'tues';
+// var holiday = 23;
+// var club = 'boys scout';
+// var homes = 'bongalow';
+// var all;
+
+// all = timeTable === 'tues' && holiday === 23 ? 'lets have fun' : club === 'boys scout' || homes === 'bongalow' ? 'need to work hard' : 'too late for that'
+
+// document.write(all)
+// document.write ('<br>')
+// 	document.write ('<br>')
+
+// 8
+	
+// var saturday = [ "rehearser",  'watching', 'laudary'].forEach(element => document.write(element));
+
+// var saturday = [ "rehearser",  'watching', 'laudary'];
+// saturday.forEach(element => {
+// 	console.log(element);
+// });
+
+
+// var saturday = [ "rehearser",  'watching', 'laudary'];
+// for (let s = 0; s < saturday.length; s++) {
+// 	const element = saturday[s];
+// console.log(element);
+// }
+	
+
+// var sunday = ['church', 'meeting', 'children party'];
+// var events;
+// var events = saturday != 'watching' && 'laudary' ? 'good to go' : sunday === 'church' || 'children party' ? 'dont attend' : 'return fund';
+//  document.write (events)
+
+	// for (let a = 0; a < saturday.length; a++) {
+	// 	const element = saturday[a];
+	// 	document.write(`${element }, `)
+	// }
+
+	// var friday = 'vigil';
+	// var thursday ='prayer meetings';
+	// var tuesday ='bible class';
+	// var monday = 'visitation';
+
+	// switch (tuesday || thursday || monday && friday){
+	// 	case 'vigil' && 'visitation':
+	// 		church = 'lets attend this programs';
+	// 		break;
+	// 	case 'bible class':
+	// 		church ='most for every worker to attend';
+	// 		break;
+	// 	case 'prayer meetings':
+	// 		church = 'very important for everyone';
+	// 		break;
+	// 	default:
+	// 		church = 'if you are a worker you must attend all activities';
+	// 		break;
+	// }
+	// document.write (church);
+
+// 9a
+
+ // let names = ['tunde','sunday', 'kolade','alima', 'olaide'];
+ // let fruits = ['mango', 'pawpaw','strawberry', 'orange', 'lime'];
+ // let nameFruits;
+ // let fruitnames;
+
+ // switch(name && fruits){
+ // 	case 'tunde' && 'mango':
+ // 	case 'sunday' && 'pawpaw':
+ // 	case 'kolade' && 'strawberry':
+ // 	case 'alima' && 'orange':
+ // 	case 'olaide' && 'lime':
+ // 	nameFruits= 'display all contents';
+ // 	break;
+ // 	default:
+ // 	nameFruits = 'Access denied';
+ // 	break;
+
+ // }
+ // document.write (nameFruits);
+
+
+//  if (name === 'kayode') {
+//  	nameFruits = 'do not display';
+
+//  }else if (fruits != 'carrot') {
+//  	nameFruits = 'display nothing'
+//  }else{
+//  	nameFruits = 'we are good'
+//  }
+// document.write (nameFruits);
+
+
+// 9b
+
+// let fruitsname = fruits != 'pawpaw'? 'good for health' : names === 'olaide' ? 'thats great' : 
+// 'revisit the sites';
+// document.write (fruitsname);
+
+
+// 10 (i used 'let' but was throwing error until i changed it to 'var' Y?)
+
+// let term =['first', 'second', 'third', 'fouth', 'fifth' ,'sixth'];
+// let subjects =['maths','econs', 'english'];
+// let electives =['yoruba', 'igbo', 'hausa'];
+// let areas;
+
+// switch(term){
+// case 'first':
+//  	sund = 'the begining of the section'
+//  	break;
+//  case 'second':
+//  	sund ='the mid of the section';
+//  	break;
+//  case 'third':
+//   	sund = 'the end of the section';
+//   	break;
+//   case 'fouth':
+//   case 'fifth':
+//   case 'sixth':
+//   	sund = 'these aint part of the section'
+//   	break;
+//   default:
+//   sund = 'you can infuse your own term'
+//   break;
+// }
+// document.write (sund);
+
+// 11(explain why im getting d 1st ans)
+
+
+// if (electives === 'yoruba' ) {
+// 	areas ='dont add to marks'
+// }else {
+// 	areas = 'add to marks'
+// }
+// document.write (areas);
+
+
+
+//  areas = term != 'second' && 'third' ? 'pay school Fees' : subjects === 'maths' || 'english' ? 'promote to next class' :  'repeat class and pay school Fees'
+	
+// 	document.write (areas);
+
+
+
+// 12
+
+// var areas = term === 'second' &&  'third' && 'first' && 'fouth' && 'fifth' && 'sixth' ? 'let pay up our bills' : subjects != 'maths' || 'econs' || 'english' ? 'let them repeat' :  ' dont allow children'
+// document.write (areas);
+
+// if (term === 'second') {
+// 	areas = 'make we pay';
+// }else if (term === 'third') {
+// 	areas = 'we might pay too';
+// }else if (term === 'first' && 'fouth' && 'fifth') {
+// 	areas = 'make we pay jare'
+// }else{
+// 	areas = 'make we leave the money for them'
+// }
+// document.write (areas)
+
+
+
+
+// 13
+
+// var cloths =['native', 'shirts', 'trousers: 23 suleja' ,'polo'];
+// var footWear = ['pam', 'shoes' ,'sneakers' ,'suade'];
+// var wrapper;
+
+// if (cloths === 'pam') {
+// 	wrapper = 'display color red'
+// }else if (footWear != 'native') {
+// 	wrapper = 'collect the remaining items'
+// }else{
+// 	wrapper = 'show the remain goods'
+// }
+// document.write (wrapper);
+
+// wrapper = cloths === 'native' || 'trousers' && 'shirts'? 'print color red': footWear === 'pam' && 'shoes'? 'print color green' : 'show  nothing';
+// document.write (wrapper);
+// document.write ('<br>');
+
+
+// switch(cloths || footWear){
+// 	case 'shirts':
+// 	case "native":
+// 	wrapper = 'this are good stuff'
+// 	break;
+// 	case'pam':
+// 	case 'sneakers':
+// 	wrapper = 'can also go for this too'
+// 	break;
+// 	default:
+// 	wrapper = 'get other brands if you are not pleased'
+// 	break
+// }
+// document.write(wrapper);
+
+
+
+// 14
+
+
+  // let browser = 'chrome';
+  // browser ='Firefox';
+  // 'safari','opera';
+
+
+// if (browser === 'edge') {
+// 	casess='results are great'
+// }else{
+// 	casess='other browsers are better'
+// document.write (casess);
+// }
+
+
+// som = browser === 'edge' ? 'good results': browser === 'chrome'  ? 'these are also good': 'you can use other browsers the'
+// document.write (som)
+
+
+
+// switch 
+
+
+// switch (browser){
+// 	// som ='good for consumption';
+// 	// break;
+// 	case 'chrome':
+// 	case 'Firefox':
+// 	case 'safari':
+	
+// 	case 'opera':
+// 	som = 'better than others'
+// 	break;
+// 	default:
+// 	som = 'go for any you prefer'
+// 	break;
+
+// }
+// document.write (som)
+
+
+// let margin = '200px'
+// let width = '500rem'
+// let total = margin + width;
+
+
+// if (width === '500rem') {
+// 	totalSum = "color red";
+
+// }else if (width < "500rem") {
+// 	totalSum = 'color green';
+
+// }else if ( width > '500rem'){
+// 	totalSum = 'transparent';
+// }else{
+// 	totalSum = 'initial color'
+// }
+// document.write (totalSum);
+
+
+// output = margin === '200px' ? 'green' : margin > '200px' ? 'red' : margin < '200px' ? 'blue':
+// 'transparent'
+// document.write (output);
+
+// output = width === '500rem' && margin === '200px' ? 'display color green' : 
+// width < '500rem' && margin < '200px' ? 'display color yellow' : 'display transparent';
+// document.write (output);
+
+
+let age = 18
+age = prompt('kindly input your age'); 
+// let ageToDrive = age != 18 ? alert('sorry you are too young to drive Powering Off'):
+//  age == 18 ?  alert('Congratulations on your first year of driving Enjoy the ride'):
+//   age > 18 ?  alert('Power On. Enjoy the ride');
+//     console.log(ageToDrive);
+
+
+
+
+
+
+
+
+
+
+
+// function name2() {
+// 	str = 'my name are kay';
+// 	lrr = 'larry';
+// 	shw = 'shawn';
+// 	all = (`${str} ${lrr} and ${shw}`);
+// 	document.write(all);
+// }
+// name2();
+	// document.write(all);
+
+
+
+// let isBoss = confirm("Are you the boss?");
+// let isBoss = confirm("Are you the boss?");
+
+// alert( isBoss );
+// let test = prompt("Test");
+// // alert(`You are ${age} years old!`);
+
+// let name = prompt("What is your name?");
+
+
+
+
+
+// function pow(x, n) {
+//   let result = 1;
+
+//   // multiply result by x n times in the loop
+//   for (let i = 0; i < n; i++) {
+//     result *= x;
+//   }
+
+//   return result;
+// }
+
+// console.log( pow(4, 2) )
+
+
+// function pow(x, n) {
+//   let result = 1;
+
+//   // multiply result by x n times in the loop
+//   for (let a = 0; a < n; a++) {
+//     result *= x;
+//   }
+
+//   return result;
+// }
+
+// console.log( pow(4, 2) )
+
+
+// var a = 2*3;
+// var b = (3 * 5) / 2;
+// function funn(sum1, sum2, sum3, sum4, sum5) {
+// 	var ans= sum1 * sum2;
+// 	var c = sum3 * sum4;
+// 	var d = c / sum5;
+// 	console.log(ans, d / 2);
+// 	// console.log(d/2);
+// }
+
+// funn(2, 4);
+// funn(2, 5);
+
+
+
+// function sumAll(...args) { // args is the name for the array
+//   let sum = 1;
+
+//   for (let arg of args) sum += arg;
+
+//   return sum;
+// }
+
+// alert( sumAll(1) ); // 1
+// alert( sumAll(1, 2) ); // 3
+// alert( sumAll(1, 2, 3) ); // 6
+
+// var x = (2 * 3) + 5;
+// var y = 3 * 4;
+// function funName(num1, num2) {
+// 	var a = num1;
+// 	var b =  num2;
+// 	console.log( a * b);
+// }
+// funName(3, 4);
+
+
+//SORTING ARAYS USING NUMBER WITH FUNCTIONS    //SORTING ARAYS USING NUMBER WITH FUNCTIONS
+//SORTING ARAYS USING NUMBER WITH FUNCTIONS    //SORTING ARAYS USING NUMBER WITH FUNCTIONS
+//SORTING ARAYS USING NUMBER WITH FUNCTIONS   //SORTING ARAYS USING NUMBER WITH FUNCTIONS
+
+// var points = [12, 343, 45, 56, 765, 1, 312, 654, 987];
+// let myNames = [ "quadry", "ola", "sola", "tola", "kola", "lola",  "ade", "simba"];
+
+
+// points.sort(function (a,b) {return a-b});
+// document.write(points);
+// points.sort((a,b)=> a - b)   //ES6 FORMAT// 
+// document.write("<br>");
+
+// REVERSING A NUMERIC IN ARRAY  REVERSING A NUMERIC IN ARRAY  REVERSING A NUMERIC IN ARRAY
+ // REVERSING A NUMERIC IN ARRAY  REVERSING A NUMERIC IN ARRAY  REVERSING A NUMERIC IN ARRAY
+ 
+// points.sort(function (a,b) {
+// 	return b-a 
+// });
+// points.sort((a,b) => b-a);  //ES6 FORMAT// 
+// document.write(points);
+// document.write("<br>");
+
+
+
+// myNames.sort(function (a,b) {
+// 	return a - b
+// });
+// myNames.sort((a,b) => a-b);
+// document.write(myNames.sort());
+// document.write("<br>");
+// document.write(myNames.sort().reverse());  //you have to use SORT b4 the REVERSE CAN WORK WELL
+// document.write("<br>");
+
+
+
+// RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING
+// RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING RANDOM SORTING
+
+// myNames.sort(function (a,b) {
+// 	return 0.5 - Math.random() 
+// });
+
+// document.write(myNames);
+// document.write("<br>");
+
+// myNames.sort((a,b) => 0.5 - Math.random());  //ES6 FORMAT// 
+// document.write(myNames);
+// document.write("<br>");
+
+
+
+
+
+
+
+
+// let fruits = [
+// 	{names: 'Banana', size: 'big', price: 23},
+// 	{names: 'Mango', size: 'small', price: 43},
+// 	{names: 'Apple', size: 'medium', price: 73},
+// 	{names: 'Orange', size: 'big', price: 33},
+// ];
+
+
+
+// var car = [
+// 	{name: "volvo", year: 2121},
+// 	{name: 'toyota', year: 2010},
+// 	{name: 'honda', year: 2015},
+// 	{name: 'jeep', year: 2012},
+// 	{name: 'fiat', year: 2009},
+// ];
+
+// SORTING BASED ON NUMERIC OBJECT  SORTING BASED ON NUMERIC OBJECT  SORTING BASED ON NUMERIC OBJECT
+// SORTING BASED ON NUMERIC OBJECT  SORTING BASED ON NUMERIC OBJECT  SORTING BASED ON NUMERIC OBJECT
+
+
+// fruits.sort(function (a,b) {
+// 	// return a.price - b.price
+// });
+// console.log(fruits);
+
+
+
+// car.sort(function (a,b) {return a.year - b.year});
+	
+// console.log(car);
+// document.write(car);
+// document.write("<br>");
+
+// SORTING BASED ON STRINGS OBJECT  SORTING BASED ON STRINGS OBJECT  SORTING BASED ON STRINGS OBJECT
+// SORTING BASED ON STRINGS OBJECT  SORTING BASED ON STRINGS OBJECT  SORTING BASED ON STRINGS OBJECT
+// car.sort(function (a,b) {
+// 	let x = a.name;
+// 	let y = b.name;       
+// 	if (x < y ) {return -1};
+//  if (x > y) {return 1};
+// 	return 0;
+// });
+// console.log(car);
+
+
+
+
+// fruits.sort(function (a,b) {
+// 	let x = a.names.toLowerCase();
+// 	let y = b.names.toLowerCase();   //CHANING THE UPPERCASE TO LOWER CASE BECOZ ITS CASE SENSITVE
+// 	if (x < y) {return -1};
+// 	if (x > y) {return 1};
+// 	return 0;	
+// });
+
+// console.log(fruits);
+
+
+
+
+// OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD
+// OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD
+// OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD OBJECT METHOD
+		//=====	//FORMULAR ==== METHODNAME: FUNCTION() { LINE OF CODE} ============
+		//=====	//FORMULAR ==== METHODNAME: FUNCTION() { LINE OF CODE} ============
+
+
+
+// var person ={
+// 	fistName: 'ade',
+// 	lastName: 'Sunday',
+// 	age: 34,
+
+// };
+// 	console.log(person.fullName());
+// 	document.write(person.fullName());
+
+
+
+// 	let school = {
+// 	schoolName: 'Omotola',
+// 	schoolFees:	101234,
+// 	schoolAdress: 'Omotola',
+// 	schoolDetail: function () {
+// 		return `${this.schoolName} ${this.schoolFees} ${this.schoolAdress}`
+// 	}
+// };
+// document.write(school.schoolDetail())	
+
+
+
+</script>
+
+
+</html>
+
+

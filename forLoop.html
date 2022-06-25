@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <script>
+
+        // INDEPT KNOWLEDGE OF FOR LOOP/ NESTED FOR LOOP
+        // for in .
+        // 2 dimensional array
+
+        // ARRAY METHODS
+
+                 // SHIFT // UNSHIFT
+            // POP      // PUSH
+            // FOREACH  //SPLICE   //SLICE 
+            // FILTER  // MAP  //  SORT
+            // REDUCE
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+
+        // let names = ['john', 'Steve', 'paul', 'mark']
+        //     for (const name in names) {
+        //        console.log(`the index of ${name} and the value is ${names[name]}`);
+        //     } 
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+        // let sym = prompt('input a symbol')
+        // let first_number = prompt('input a number')
+        // let second_number = prompt('input a number')
+        //         for (let i = 0; i < first_number; i++) {
+        //             for (let i = 0; i < second_number; i++) {
+        //                 document.write(sym);
+        //             }
+        //                 document.write('</br>');
+        //         }
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+            // ARRARY METHODS
+
+            // SHIFT // UNSHIFT
+            // POP      // PUSH
+
+        // let places =  ['Ikoyi', 'lekki', 'sango', 'ayobo'] 
+        // places.shift()
+        // places.unshift('Badagry')
+        // places.pop()
+        // places.push('Ajah')
+
+        // console.log(places);
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+                    // FOREACH
+        
+        // let places =  ['Ikoyi', 'lekki', 'sango', 'ayobo'] 
+        //     places.forEach((elt) => {
+        //         console.log(elt);
+        //     });
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+                // SPLICE  (start , end, replace)
+
+        // let info =  ['I', 'love', 'telemundo', 'how', 'about','you']
+      
+                // let removed = info.splice(2,1, 'javascript')
+                //     console.log(info);
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+
+                // SORT
+
+// let numb1 = [1,3,4,5,3,1,4]
+
+//    numb1.sort((a,b) => a-b)
+//    console.log(numb1);
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+                    //   FIRST METHOD TO REMOVE DUPLICATES
+                // let users = [1,2,3,4,5,5,3,2,3,2]      
+                // let ans = []
+                // for (const user of users) {
+                //     if(!ans.includes(user)){
+                //         ans.push(user)
+                //     }
+                // }
+                //       console.log(ans);
+                      
+                      
+ ///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+                    //   SECOND METHOD TO REMOVE DUPLICATES
+                      
+                    //   let users = [1,7,6,7,4,5,5,3,6,3,2]      
+                    //      let ans = []
+
+                    //      users.forEach(user =>{
+                    //           if(!ans.includes(user)){
+                    //           ans.push(user)
+                    //           }
+                                 
+                    //      })
+                    //         console.log(ans.sort());
+                      
+         ///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+                    //   THIRD METHOD TO REMOVE DUPLICATES
+                      
+            // let numbers = [1,3,4,5,6,4,2,3,4,5,6,7]
+            //  let unique =numbers.filter((x, y) => {
+            //     return numbers.indexOf(x) === y
+           
+            // })
+            //           console.log(unique);
+
+         ///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+                    //   FOUTH METHOD TO REMOVE DUPLICATES
+
+               
+            //    let num = [3,4,5,6,3,2,3,4,5,8,9,]
+            //    let sum = [... new Set(num)]
+            //    sum.push(89,56,453,34)
+            //    sum.forEach(n => n)
+            //    sum.sort((a,b)=>{
+            //      return  a-b
+                 
+            //    })
+            //    console.log(sum);
+
+
+                      
+                      
+                        // FOUR 4 WAYS TO REMOVE DUPLICATES FROM AN ARRAY`
+                        // FOUR 4 WAYS TO REMOVE DUPLICATES FROM AN ARRAY`
+           // REMOVING DUPLICATES FROM AN ARRY  // REMOVING DUPLICATES FROM AN ARRY   
+ 
+            // 111111111111111111111  (USING FOREACH/INCLUDES/PUSH METHODS)
+// let numb1 = [1,3,4,5,3,1,4]
+// let uni = []
+//     numb1.forEach((numb1) =>{
+//             if(!uni.includes(numb1))
+//             uni.push(numb1)
+//     })
+//     console.log(uni);
+
+
+
+// 22222222222222222222222222222222222222 (USING FOROF/INCLUDES/PUSH METHODS)
+// let numb1 = [1,3,4,5,3,1,4,2];
+// let empty = [];
+// for (const num of numb1) {
+// //     if (!empty.includes(num)) {
+// //         empty.push(num);
+        
+//     // }
+// }
+// console.log(empty);
+
+
+// let numb1 = [1,3,4,5,3,1,4,2];
+// let empty = [];
+// for (const num of numb1) {
+//     if (empty.indexOf(num)===num) {
+//         // console.log(num);
+//         // empty.push(empty)
+//     }
+
+// }
+// console.log(empty);
+
+
+
+
+// 333333333333333333333333333333 (USING SPREED OPERATOR) (very simple)
+// let value = [1,3,4,5,3,1,4,2];
+// let value2 = [12,34,45,67,4,3,6,7,8,9,14,51]
+// let emp = [ ... new Set(value), ... new Set(value2)];
+//     let empty = [... new Set(emp)]
+//       empty.sort((a,b)=> a-b)
+//     console.log(empty);
+
+
+// 444444444444444444444444 (USING FILTER/INDEXOF METHODS) (simple)
+
+// let val = [1,3,4,5,3,1,4,2];
+
+// let unique = val.filter((x,y)=> {
+//     return val.indexOf(x)===y
+    
+// })
+// console.log(unique);
+
+
+// 555555555555555555555 (USING FILTER/INDEXOF METHODS/ IF STATEMENT) (simple)
+// let vale = [12,33,4,5,3,1,4,2];
+
+// let uniques = vale.filter((x,y)=> {
+   
+//     if (vale.indexOf(x)=== y) {
+//         return vale
+//     }
+// })
+// console.log(uniques);
+
+
+
+
+
+// let x = []
+// const arr = new Array(8).fill(2)
+// console.log(arr);
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+
+let numbs = [
+    [2,45,5,6,7,8,8,7,9,7],
+    [52,95,63,23,57,54,87],
+    [45,5,55,67,87,77,6,69],
+    [52,452,25,46,47,48,29]
+]
+
+// for (const num of numbs) {
+//     if (num.indexOf(numbs) === num) {
+//         return numbs
+//     }
+// }
+//  let enet = numbs.filter((i, y) => {
+//     if ( numbs.indexOf(i) === y) { 
+//         return numbs
+//     }
+// })
+// console.log(enet);
+
+
+// let addss = []
+//   numbs[2].forEach(el => {
+//         //   el.sort((a,b)=>a-b)  //not working 
+//       if (!addss.includes(el)) { //not removing the duplicates too
+//           addss.push(el)
+//       }
+//   });
+//       console.log(addss);
+
+
+
+// console.log(numbs[0][4] + numbs[1][0]);
+
+// let adds = numbs[0][4] + numbs[1][0]
+//         console.log(adds);
+
+
+
+    // let som = [... new Set(numbs)]
+    //     som.forEach( el => {
+    //         el.sort(( a, b ) => a - b )
+
+    //         console.log(el);
+    //     });
+// console.log(som);
+
+
+
+
+
+
+
+
+
+// for (const num in numbs) {
+//    num.sort((a,b) => a-b)
+//         console.log(num);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+
+            // let names = ['sola', 'titi' ,'james' ,'steve']
+
+            // for (const name in names) {
+            //     console.log(`the index of ${name} and it value is ${names[name]}`);
+            // }
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+
+                // let sym = prompt('input symb')
+                // let first_input = prompt('input number')
+                // let second_input = prompt('input number')
+                          
+                // for (let i = 0; i < first_input; i++) {
+                   
+                //    for (let x = 0; x < second_input; x++) {
+                //       document.write(sym);
+                       
+                //    }
+                //    document.write('</br>');
+                // }
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+
+                // ARRAY METHODDS
+                // FOR ADDING AND REMOVING
+                // shift   //unshift  from the value
+                // push    // pop  from last value
+
+        // let places = ['via', 'Ajah', 'Lekki', 'Ikorodu']
+        //         places.shift();
+        //         places.unshift('ikeja')
+        //         places.pop()
+        //         places.push('Badagry')
+
+        //             console.log(places);
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+                    //  FOREACH
+
+        //     let places = ['via', 'Ajah', 'Lekki', 'Ikorodu']
+        // places.forEach(elt => {
+        //     console.log(elt);
+        // });
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+            // SPLICE(start, end , replace)
+
+// IT CAN INSERT , REMOVE AND REPLACE
+//  let info = [' i' ,'love ','telemudo', 'how' ,'about', 'you']
+
+//     let removed = info.splice(2, 1, 'javascript')
+
+//     console.log(info);
+
+
+
+
+// // /////////////////////////////////////////////////////////////////
+// // /////////////////////////////////////////////////////////////////
+//                     // SORT
+
+//             let number = [1,23,45,56,2,6,8,12]
+//                 number.sort((a,b)=> b-a )
+//                     console.log(number);
+                
+
+// // /////////////////////////////////////////////////////////////////
+// // /////////////////////////////////////////////////////////////////
+
+// // SLICE(START END)
+// // CONCAT(JOIN 2 VALUES)
+
+// // /////////////////////////////////////////////////////////////////
+// // /////////////////////////////////////////////////////////////////
+
+// // FIND AND FINDINDEX (it looks for a single element 
+//                     // we cant use it for many element)
+
+//     let users =[  
+//         {id: 1, name: 'john'},
+//         {id: 2, name: 'james'},
+//         {id: 3, name: 'paul'},
+
+//     ]
+//     let used = users.find(x => x.id == 2)
+//     console.log(used);
+//     let user = users.findIndex(x => x.id == 3)
+//     console.log(user);
+
+
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+
+                    // FILTER 
+            // (it looks for one or more than one element ) 
+                   
+//  let users =[  
+//         {id: 1, name: 'john'},
+//         {id: 2, name: 'james'},
+//         {id: 3, name: 'paul'},
+
+//     ]
+//         let all = users.filter(ele => ele.id == 1)
+//             console.log(all);
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+                // INCLUDE
+
+
+// let arr = ['JOHNs', 'JAMES', 'MARK', 'DAVE']
+//     if (arr.includes('JOHNs'!== false) ) {
+//         console.log('time to sleep');
+//     }else{
+//         arr.push('kola','lola');
+//         arr.pop();
+//     }
+    // console.log('Re-enter your data')
+        
+    // console.log( arr.includes('JOHN'));
+    // console.log( arr.includes('kola'));
+    // console.log( arr);
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+                // MAP
+
+        // let numbs1 = [ 1,2,3,4,5,6,7]
+        // let numb1 = numbs1.map(x => x  + 3 * 2)
+        //     console.log(numb1);
+
+
+// /////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////
+                // REDUCE   
+        //  let numbs = [ 1,2,3,4,5,6,7]
+        //     let num3 = numbs.reduce((x,y) => x + y )
+        //     alert(num3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // for (let x = 0; x <=5; x++) {
+        //      console.log(x);
+        // }
+
+
+        // let names = ['Ade', 'Kola', 'Mark', 'John']
+        //     for (let x = 0; x < names.length; x++) {
+        //         console.log(names[x]);
+                
+        //  }
+        
+
+        // for (let i = 0; i <= 5; i++) {
+        //     for (let x = i + 1 ; x <= 4; x++) {
+        //     console.log(i , '  ', x);
+        // }
+        // }
+
+
+        // for (let i = 0; i <= 5; i++) {
+        //     console.log(i );
+        //     for (let x = 0; x <= 4; x++) {
+        //     console.log('  ' + x);
+        // }
+        // }
+
+    // let names = ['Ade', 'Kola', 'Mark', 'John']
+    //         for (let x = 0; x < names.length; x++) {
+    //             console.log(names[x]);
+                
+    //             for (let t = 0; t < names.length; t++) {
+    //                 console.log(' ' + names[t]);
+    //        }     
+    //      }
+
+
+// for (let i = 0; i < 10; i++) {
+
+// for (let j = 0; j < 10; j++) {
+
+// 	if (i % 2 === 1 , j % 3 === 1) continue ;
+		
+// 	document.write(i, j );
+
+// }
+// 	document.write('<br>' );
+// 	}
+
+    // let symb = prompt('insert symb');
+    // let lineOne = prompt('input numb')
+    // let secondLine = prompt('input numb')
+
+    //     for (let i = 0; i < lineOne; i++) {
+    //         for (let x = 0; x < secondLine; x++) {
+    //             document.write(symb);
+    //         } 
+    //             document.write('</br>');
+    //     }
+
+//     let people = [
+//                     ['john', 23, 'Nigeria', ['black','red']],
+//                     ['Sarah', 45, 'Liberia', ['pink','blue']],
+//                     ['Tola',23 , 'Ghana', ['green','white']],
+//                     ['Rocky',43, 'USA', ['blue','brown']],
+//                 ]
+// // document.write( people[ 3 ] )
+// document.write('</br>')
+//                 for (let x = 0; x < people.length; x++) {
+//                     const element = people[x];
+//                     document.write(element)
+//                     // document.write(people[2])
+//                     document.write('</br>')
+//                 }
+
+                        // people.forEach(element => {
+                        //     document.write(element)
+                        // document.write('</br>')
+                        // });
+
+                        // for (const keys in people) {
+                        //     document.write(people[keys][2])
+                        //     document.write('</br>')
+                        // }
+                        
+
+                // for (let i = 0; i < people.length; i++) {
+                //         let element = people[i];
+                //     for (let j = 0; j < element.length; j++) {
+                        
+                //         document.write(element[j])
+                //         document.write('</br>')
+                //     }
+                //         document.write('</br>')
+                // }
+
+        
+
+
+
+// let symb = '97';
+// let symb1 = ' /  ';
+//     let lineOne = 3
+//     let secondLine = 4
+
+//         for (let i = 0; i < lineOne; i++) {
+//             for (let x = 0; x < secondLine; x++) {
+//                 document.write(symb,symb1);
+//             } 
+//                 document.write('</br>');
+//         }
+
+
+// SPLICE METHOD
+
+// TO REMOVE FROM AN ARRAY
+// TO REMOVE FROM AN ARRAY
+
+// let arr = [ 'i ', 'love', 'to','study', 'javaScript'];
+//  let removed = arr.splice(3,3, 'travel', 'out')
+//  alert(removed)
+//  alert(arr)
+
+
+// WITHOUT REMOVING FROM THE ARRAY JUST ADDING TO IT
+// WITHOUT REMOVING FROM THE ARRAY JUST ADDING TO IT
+
+// let arr = [ 'i ', 'love', 'to','study', 'javaScript'];
+// arr.splice(5, 0, ' very fast')
+// alert(arr)
+
+    // let arr = [1, 2, 3, 5]
+    //     arr.splice(-1, 2, 4, 6 )
+
+    //     alert(arr)
+
+
+// FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  
+// FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  
+// FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  FOREACH  
+
+// ['JOHN', 'JAMES', 'MARK', 'DAVE'].forEach((x ,y, array)=>{
+//     console.log(`${x} is at index ${y} in  ${array}`);
+// })
+
+// let arr = ['JOHN', 'JAMES', 'MARK', 'DAVE']
+//     arr.forEach((a)=> {
+//         console.log(a);
+//     })
+
+
+// SORT SORT SORT // SORT SORT SORT // SORT SORT SORT 
+// SORT SORT SORT // SORT SORT SORT // SORT SORT SORT 
+// SORT SORT SORT // SORT SORT SORT // SORT SORT SORT 
+
+    // for (const key in sum) {
+    //    key.sort((a,b) => a-b)
+    // }
+    //    output += key[sum]
+    //    console.log(output);
+    
+    // FOREACH FOREACH FOREACH FOREACH FOREACH FOREACH 
+    // FOREACH FOREACH FOREACH FOREACH FOREACH FOREACH 
+
+    // let sum = ['JOHNs', 'JAMES', 'MARK', 'DAVE']
+
+    // sum.forEach(element => {
+    //     console.log(element);
+    // });
+        
+
+
+
+
+  ////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////
+
+    // SORT  SORT  SORT  SORT  SORT  SORT 
+    // SORT  SORT  SORT  SORT  SORT  SORT 
+
+    // sum.sort((a,b) => a - b)
+    // console.log(sum);
+
+
+
+        // for (let i = 0; i < sum.length; i++) {
+        //         // sum.push(34)
+        //         sum.sort((a,b)=> a-b)
+        //     //   output += sum[i]; //OPTIONAL
+            
+        // }
+        // console.log(sum);
+
+
+
+//   let arr = [8,9,6,0,6,4]
+//         let input 
+//         function convert (arr){
+//             for (let i = 0; i < arr.length; i++) {
+              
+//                 for (let x = i+1; x < arr.length; x++) {
+
+//                     if (arr[i] > arr[x]) {
+//                         input = arr[i]
+//                         arr[i]= arr[x]
+//                         arr[x]= input
+//                     }
+
+//                 }
+                
+//             }
+//                 return arr
+//         }
+
+//         const newArr = convert(arr)
+//         console.log(newArr);
+
+
+////////////////////////////////////////////////////////
+
+    // let book = ['Ade', 'Solo','Omoefe','Ebuka','Kola', 'Mark', 'John'];
+    // let names = ['Suru', 'Via','Agege','Ikoyi','Ajegunle', 'ikorodu', 'Lekki'];
+        //  for (let x = 0; x < names.length; x++) {             
+        //      for (let i = x+1; i < book.length; i++) {
+        //          console.log(book[i], ' ', names[x]);
+             
+        //      }
+        // }
+        // for (const boos in book) {
+        //     // for (const key in names) {
+        //         if (boos % boos) {
+        //             console.log('shows');
+                    
+                // }
+                //  console.log(book[boos]);
+
+            // }
+        // }
+
+        //   book.forEach(x => {
+        //       console.log(x);
+        //   });
+          
+            // for (let x = 0; x < names.length; x++) {         
+            //     console.log(names[x]); 
+                // for (let t =0; t <= location.length; t++) {
+                //     console.log(names[x]);
+                    // console.log(names[x] , ' ' , location[t]);
+        //    }     
+        //  }
+
+          // for (let i = 0; i <= 5; i++) {
+        //     for (let x = i + 1 ; x <= 4; x++) {
+        //     console.log(i , '  ', x);
+        // }
+        // }
+      
+    </script>
+</body>
+</html>
